@@ -1,32 +1,26 @@
-Coffee Machine Kata - Špecifikácia
+Coffee Machine Kata
 
-1. Nápoje:
-   - Coffee = 2 €
-   - Tea = 1.5 €
-   - Chocolate = 2.5 €
-   - Cappuccino = 3 €
-   - Latte = 3.5 €
+The coffee machine serves different drinks. Prices depend on the drink, the size, extras like milk and
+sugar, and sometimes even the time of the day or the loyalty of the customer.
 
-2. Veľkosti:
-   - small = základná cena
-   - medium = +0.5 €
-   - large = +1 €
+Base prices: Coffee costs 2 €, Tea 1.5 €, Chocolate 2.5 €, Cappuccino 3 €, and Latte 3.5 €. The price
+changes depending on the size: medium drinks are 50 cents more, large ones are 1 € more. Milk adds
+another 20 cents. Sugar is free up to 2 cubes, but if you add more, it gets more expensive: every extra
+cube adds 10 cents. The machine should never allow more than 5 sugars in a drink.
 
-3. Príplatky:
-   - mlieko +0.2 €
-   - každá kocka cukru nad 2 = +0.1 €
+There are a few special rules. If you try to order with 6 sugars or more, the machine refuses and shows
+an error about too much sugar. The price of a drink must always be positive, if for some reason it would
+be zero or less, that’s also an error.
 
-4. Obmedzenia:
-   - max 5 kociek cukru
-   - cena > 0
+Payment: if you insert less money than the required cost, you don’t get a drink. If you pay the exact
+price, the drink is served normally. If you put in more, you get the drink plus change. The change should
+always be shown with 2 decimal places.
 
-5. Platby:
-   - ak suma < cena → "Not enough money"
-   - ak suma = cena → "Serving …"
-   - ak suma > cena → "Serving … with change X.YY"
+There is also a loyalty card. Every fifth drink is free if you have the card. But large drinks are
+excluded, those always have to be paid for.
 
-6. Loyalty card:
-   - každý 5. nápoj zadarmo (okrem Large)
+Finally, between 15:00 and 17:00 the machine has “happy hours”: all drinks are 20% cheaper.
 
-7. Happy hours (15:00–17:00):
-   - 20 % zľava na všetky nápoje
+---
+
+It is your job to make sure the coffee machine behaves correctly according to these rules.

@@ -4,18 +4,15 @@
   "description": "Coffee Machine Kata - inspired by Gilded Rose",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
     "test": "jest",
-    "start": "ts-node src/index.ts"
+    "fixture": "ts-node fixture.ts"
   },
-  "keywords": [],
-  "author": "Marek Tučáni",
-  "license": "MIT",
+  "author": "Attila Kerekes",
+  "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^29.5.0",
-    "jest": "^29.5.0",
-    "ts-jest": "^29.1.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.0"
+    "@types/jest": "^27.0.3",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0"
   }
 }

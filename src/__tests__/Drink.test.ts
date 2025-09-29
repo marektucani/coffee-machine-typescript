@@ -1,4 +1,4 @@
-import { Drink } from "../src/Drink";
+import { Drink } from '../Drink';
 
 describe("Drink", () => {
   it("should create drink with correct properties", () => {
