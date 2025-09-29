@@ -1,0 +1,32 @@
+Coffee Machine Kata - Špecifikácia
+
+1. Nápoje:
+   - Coffee = 2 €
+   - Tea = 1.5 €
+   - Chocolate = 2.5 €
+   - Cappuccino = 3 €
+   - Latte = 3.5 €
+
+2. Veľkosti:
+   - small = základná cena
+   - medium = +0.5 €
+   - large = +1 €
+
+3. Príplatky:
+   - mlieko +0.2 €
+   - každá kocka cukru nad 2 = +0.1 €
+
+4. Obmedzenia:
+   - max 5 kociek cukru
+   - cena > 0
+
+5. Platby:
+   - ak suma < cena → "Not enough money"
+   - ak suma = cena → "Serving …"
+   - ak suma > cena → "Serving … with change X.YY"
+
+6. Loyalty card:
+   - každý 5. nápoj zadarmo (okrem Large)
+
+7. Happy hours (15:00–17:00):
+   - 20 % zľava na všetky nápoje
